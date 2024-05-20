@@ -44,17 +44,22 @@ export async function sendEmailAction(
     return { emailSent: false, errors: errors };
   }
 
-  const response = await fetch("http:localhost:3000/api/contact", {
-    method: "POST",
-    body: formData,
-  });
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: formData,
+    });
 
-  const data = await response.json();
+    const data = await response.json();
 
-  if (data.message === "Error") {
+    if (data.message === "Error") {
+      errors.push("send email");
+      return { emailSent: false, errors };
+    }
+
+    return { emailSent: true, errors: [] };
+  } catch (error) {
     errors.push("send email");
     return { emailSent: false, errors };
   }
-
-  return { emailSent: true, errors: [] };
 }
