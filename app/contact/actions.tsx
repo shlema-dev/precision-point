@@ -49,7 +49,14 @@ export async function sendEmailAction(
     const response = await fetch("/api/contact", {
       method: "POST",
       body: formData,
+      headers: {
+        Accept: "application/json",
+      },
     });
+
+    if (!response.ok) {
+      throw new Error("Network response api contact was not ok");
+    }
 
     const data = await response.json();
 
