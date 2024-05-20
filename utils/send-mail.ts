@@ -30,5 +30,9 @@ export async function sendMail(
     <p>${message}</p>`,
   };
 
-  await transporter.sendMail(mailOptions);
+  try {
+    await transporter.sendMail(mailOptions);
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
 }
