@@ -31,8 +31,10 @@ export async function sendMail(
   };
 
   try {
+    console.log("Trying to send with NodeMailer transporter...");
     await transporter.sendMail(mailOptions);
   } catch (error: any) {
+    console.log("Failed to send mail with nodemailer!");
     throw new Error(message);
   }
 }

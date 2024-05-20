@@ -45,6 +45,7 @@ export async function sendEmailAction(
   }
 
   try {
+    console.log("Sending POST request to contact API...");
     const response = await fetch("/api/contact", {
       method: "POST",
       body: formData,
