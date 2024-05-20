@@ -33,6 +33,6 @@ export async function sendMail(
   try {
     await transporter.sendMail(mailOptions);
   } catch (error: any) {
-    throw new Error(error.message);
+    throw new Error(message);
   }
 }
