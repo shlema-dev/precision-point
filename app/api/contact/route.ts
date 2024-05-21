@@ -18,11 +18,11 @@ export async function POST(request: NextRequest) {
       const res = await sendMail(firstName, lastName, email, message);
       response = { message: "Success" };
       console.log("Successfully sent mail, returning success from api route.");
+      return NextResponse.json(response, { status: 200 });
     } catch (error) {
       response = { message: "Error" };
       console.log("Failed to send Mail, returning from api route.");
+      return NextResponse.json(response, { status: 500 });
     }
   }
-
-  return NextResponse.json(response);
 }
