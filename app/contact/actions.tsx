@@ -45,10 +45,15 @@ export async function sendEmailAction(
   }
 
   try {
-    const response = await fetch("/api/contact", {
+    console.log("Sending POST request to contact API...");
+    const response = await fetch(`${process.env.URL}/api/contact`, {
       method: "POST",
       body: formData,
     });
+
+    if (!response.ok) {
+      throw new Error("Network response api contact was not ok");
+    }
 
     const data = await response.json();
 
