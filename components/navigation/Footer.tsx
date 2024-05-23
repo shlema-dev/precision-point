@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           </a>
 
           <a
-            href="tel:+8186196236"
+            href="tel:+18186196236"
             className="mt-4 lg:mt-0 text-gray-11 self-center"
           >
             (818) 619-6236
