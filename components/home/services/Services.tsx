@@ -138,11 +138,10 @@ const Services: React.FC = () => {
                 translateZ="60"
                 className="prose prose-sm text-gray-11 px-3"
               >
-                For our clients most valuable or time sensitive positions, with
-                this method, our clients pay an upfront fee to initiate the
-                search process. This type of service is typically utilized for
-                high-level executives or senior management positions, where the
-                stakes are high, and the recruitment process can be more
+                For our client&apos;s most valuable or time sensitive positions.
+                Our clients pay an upfront fee to initiate the search process.
+                Typically utilized for high-level executives or senior
+                management positions, where the recruitment process can be more
                 complex.
               </CardItem>
             </CardBody>
@@ -182,11 +181,11 @@ const Services: React.FC = () => {
                 translateZ="60"
                 className="prose prose-sm text-gray-11 px-3"
               >
-                Recruitment Process Outsourcing model is where Precision Point
-                takes takes on responsibility of managing the recruitment
-                process on behalf of the client, much like a 3rd party
-                contractor. Typically, the RPO model is used amongst our larger
-                organization clients with higher volume recruitment needs.
+                Recruitment Process Outsourcing is where we take take on the
+                responsibility of managing the recruitment process on behalf of
+                the client, much like a 3rd party contractor. Typically, the RPO
+                model is used amongst larger organization clients with higher
+                volume recruitment needs.
               </CardItem>
             </CardBody>
           </CardContainer>

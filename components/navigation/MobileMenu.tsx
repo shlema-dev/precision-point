@@ -67,7 +67,7 @@ const MobileMenu: React.FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 anchor="bottom end"
-                className="z-10 mt-2 py-6 w-56 flex flex-col justify-center origin-top bg-gray-3 rounded-xl"
+                className="z-10 mt-2 py-6 w-56 flex flex-col justify-center origin-top bg-gray-3 rounded-lg"
               >
                 <div className="flex flex-col gap-4 text-center items-center">
                   <MenuItem>
