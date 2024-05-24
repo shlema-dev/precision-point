@@ -7,6 +7,7 @@ export default function Header() {
     <section className="w-full relative flex items-center justify-center min-h-[100vh] overflow-hidden">
       <video
         className="absolute z-1 w-auto min-w-full min-h-full max-w-none opacity-50"
+        preload="metadata"
         autoPlay
         muted
         loop
