@@ -18,7 +18,10 @@ const MobileMenu: React.FC = () => {
     <Menu as="div" className="flex flex-1 justify-end lg:hidden">
       {({ open }) => (
         <>
-          <MenuButton className="flex items-center rounded-full border border-gray-11 p-3">
+          <MenuButton
+            className="flex items-center rounded-full border border-gray-11 p-3"
+            aria-label="nav button"
+          >
             {open ? (
               <motion.div
                 key="crossIcon"

@@ -13,7 +13,7 @@ export default function Header() {
         loop
         playsInline
       >
-        <source src="/videos/networking.mp4" type="video/mp4" />
+        <source src="/videos/networking.mp4#t=1" type="video/mp4" />
       </video>
       <div className="z-10 flex flex-col items-center justify-center text-center gap-8 absolute inset-0 px-4">
         <Reveal delay={0.15}>
