@@ -38,11 +38,10 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       >
         <textarea
           className={cn(
-            `flex w-full border-none bg-gray-3 text-gray-12 shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
+            `flex w-full border border-primary-8 bg-primary-1 text-primary-12 shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
           file:text-sm file:font-medium
-          focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-gray-8
+          focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-primary-8
            disabled:cursor-not-allowed disabled:opacity-50
-           dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
            group-hover/input:shadow-none transition duration-400
            `,
             className

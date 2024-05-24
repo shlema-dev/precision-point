@@ -5,7 +5,7 @@ const HeaderContact: React.FC = () => {
   return (
     <Reveal>
       <section className="mt-24 mb-12 lg:mt-48 lg:mb-24 pt-24 px-6 w-[85vw] flex flex-col items-center justify-start text-center prose">
-        <h1 className="prose-3xl lg:text-6xl lg:font-semibold dark:text-gray-12 text-gray-1">
+        <h1 className="prose-3xl lg:text-6xl lg:font-semibold text-gray-12">
           Get In{" "}
           <span className="bg-gradient-to-r from-primary-9 to-indigo-600 inline-block text-transparent bg-clip-text">
             Touch

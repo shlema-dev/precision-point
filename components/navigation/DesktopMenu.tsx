@@ -14,8 +14,8 @@ const DesktopMenu: React.FC = () => {
           whileHover={{
             boxShadow:
               path === "/"
-                ? "0px 0px 8px rgb(0, 162, 199)"
-                : "0px 0px 8px rgb(255, 255, 255)",
+                ? "0px 2px 0 rgba(0, 162, 199, 1)"
+                : "0px 2px 0 rgba(0, 0, 0, 0.7)",
           }}
           className={`${
             path === "/"
@@ -30,14 +30,16 @@ const DesktopMenu: React.FC = () => {
           whileHover={{
             boxShadow:
               path === "/about"
-                ? "0px 0px 8px rgb(0, 162, 199)"
-                : "0px 0px 8px rgb(255, 255, 255)",
+                ? "0px 2px 0 rgba(0, 162, 199, 1)"
+                : path === "/"
+                ? "0px 2px 0 rgba(255, 255, 255, 1)"
+                : "0px 2px 0 rgba(0, 0, 0, 0.7)",
           }}
           className={`${
             path === "/about"
               ? "text-primary-9 border-b border-primary-9"
               : "text-gray-12"
-          } px-5 py-1`}
+          } ${path === "/" ? "text-primary-1" : "text-gray-12"} px-5 py-1`}
         >
           <Link href={"/about"}>About</Link>
         </motion.li>
@@ -46,14 +48,16 @@ const DesktopMenu: React.FC = () => {
           whileHover={{
             boxShadow:
               path === "/contact"
-                ? "0px 0px 8px rgb(0, 162, 199)"
-                : "0px 0px 8px rgb(255, 255, 255)",
+                ? "0px 2px 0 rgba(0, 162, 199, 1)"
+                : path === "/"
+                ? "0px 2px 0 rgba(255, 255, 255, 1)"
+                : "0px 2px 0 rgba(0, 0, 0, 0.7)",
           }}
           className={`${
             path === "/contact"
               ? "text-primary-9 border-b border-primary-9"
               : "text-gray-12"
-          } px-5 py-1`}
+          } ${path === "/" ? "text-primary-1" : "text-gray-12"} px-5 py-1`}
         >
           <Link href={"/contact"}>Contact</Link>
         </motion.li>

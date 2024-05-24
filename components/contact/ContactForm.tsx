@@ -16,10 +16,8 @@ export function ContactForm() {
   });
 
   return (
-    <div className="w-full mx-auto rounded-lg md:rounded-2xl p-4 md:p-8 shadow-input bg-gray-2">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-        Send us an email
-      </h2>
+    <div className="w-full mx-auto rounded-lg md:rounded-2xl p-4 md:p-8 shadow-input border-2 border-primary-8 bg-primary-1">
+      <h2 className="font-bold text-xl text-primary-11">Send us an email</h2>
 
       <form id="contactform" className="mt-8 mb-4" action={formAction}>
         {state.errors.includes("send email") && (
@@ -84,10 +82,10 @@ export function ContactForm() {
 
         {state.emailSent ? (
           <div className="flex flex-col lg:flex-row justify-center items-center gap-2 text-center">
-            <div className="rounded-full p-1 bg-success-9">
-              <CheckIcon />
+            <div className="rounded-full p-1 bg-primary-9">
+              <CheckIcon color="white" />
             </div>
-            <p className="text-success-9">Email sent!</p>
+            <p className="text-primary-9">Email sent!</p>
           </div>
         ) : (
           <FormSubmit />
