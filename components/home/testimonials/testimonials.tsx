@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import company1 from "@/public/company1.png";
-import company2 from "@/public/company2.png";
-import company3 from "@/public/company3.png";
+import biomarinLogo from "@/public/biomarin-logo.png";
+import flatironLogo from "@/public/flatiron-logo.png";
+import fourDMTLogo from "@/public/4dmt-logo.png";
 import { Reveal } from "@/components/ui/Reveal";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="min-h-[85vh] h-auto flex flex-col justify-start items-center pb-12">
+    <section className="min-h-[95vh] lg:pb-48 h-auto flex flex-col justify-start items-center pb-12">
       <Reveal delay={0.25}>
         <div className="z-10 lg:mb-2 mt-16 px-6 py-4 flex flex-col prose text-center">
           <h2 className="text-4xl font-bold text-gray-12 rounded-lg">
@@ -16,7 +16,7 @@ const Testimonials: React.FC = () => {
               Success
             </span>
           </h2>
-          <p className="-mt-2 prose-md lg:prose-lg text-gray-12">
+          <p className="-mt-2 prose-md lg:prose-lg text-gray-11">
             Browse the stories of professional growth and organizational
             enhancement from our network. See how we turn career aspirations and
             business needs into reality.
@@ -27,11 +27,11 @@ const Testimonials: React.FC = () => {
       <div className="z-10 w-[85vw] lg:max-w-7xl my-8 flex flex-col justify-center items-center gap-6 lg:gap-8 ">
         {/* First Tetstimonial */}
         <Reveal delay={0.25}>
-          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-gradient-to-l from-primary-2 to-primary-3">
+          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl  bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%]">
-              <Image src={company1} alt="Company logo" quality={100} />
+              <Image src={biomarinLogo} alt="Company logo" quality={100} />
             </div>
-            <p className="prose-sm lg:prose-lg text-gray-12 pt-6">
+            <p className="prose-sm lg:prose-lg text-primary-12 pt-6">
               “I recently had the pleasure of working with Precision Point after
               they contacted me about an exciting job opportunity. Throughout
               the process, Precision Point was professional, deeply
@@ -44,7 +44,7 @@ const Testimonials: React.FC = () => {
               Point - they are hands down the best recruitment firm I&apos;ve
               worked with.”
             </p>
-            <p className="prose-sm lg:prose-lg text-gray-12 font-medium pt-4 lg:pt-8">
+            <p className="prose-sm lg:prose-lg text-primary-11 font-medium pt-4 lg:pt-8">
               Director at BioMarin
             </p>
           </div>
@@ -52,11 +52,11 @@ const Testimonials: React.FC = () => {
 
         {/* Second Tetstimonial */}
         <Reveal delay={0.25}>
-          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-gradient-to-r from-primary-2 to-primary-3 ">
+          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%]">
-              <Image src={company2} alt="Company logo" quality={100} />
+              <Image src={flatironLogo} alt="Company logo" quality={100} />
             </div>
-            <p className="prose-sm lg:prose-lg text-gray-12 pt-6">
+            <p className="prose-sm lg:prose-lg text-primary-12 pt-6">
               “I worked with Precision Point while going through the recruitment
               process. They were were kind, courteous, attentive to my unique
               situation and ultimately, was able to place me in a position which
@@ -66,7 +66,7 @@ const Testimonials: React.FC = () => {
               believe Precision Point genuinely cares about their placements and
               making sure it is a good fit.”
             </p>
-            <p className="prose-sm lg:prose-lg text-gray-12 font-medium pt-4 lg:pt-8">
+            <p className="prose-sm lg:prose-lg text-primary-11 font-medium pt-4 lg:pt-8">
               Director at FlatIron Health
             </p>
           </div>
@@ -74,11 +74,11 @@ const Testimonials: React.FC = () => {
 
         {/* Third Tetstimonial */}
         <Reveal delay={0.25}>
-          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-gradient-to-l from-primary-2 to-primary-3">
+          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%] -ml-2 lg:-ml-6">
-              <Image src={company3} alt="Company logo" quality={100} />
+              <Image src={fourDMTLogo} alt="Company logo" quality={100} />
             </div>
-            <p className="prose-sm lg:prose-lg text-gray-12 pt-6">
+            <p className="prose-sm lg:prose-lg text-primary-12 pt-6">
               “As an in-house HR professional, agencies reach out to me
               literally every day. I’ve had some bad experiences with agencies
               that did not have my company’s best interests at heart. Precision
@@ -98,8 +98,8 @@ const Testimonials: React.FC = () => {
               and were communicated with in a timely manner. I would certainly
               engage Precision Point again when the need arises.”
             </p>
-            <p className="prose-sm lg:prose-lg text-gray-12 font-medium pt-4 lg:pt-8">
-              Talent Acquisition Leader, Stealth Mode Biotech
+            <p className="prose-sm lg:prose-lg text-primary-11 font-medium pt-4 lg:pt-8">
+              Elza Reynolds, Associate Director, Talent Acquisition
             </p>
           </div>
         </Reveal>

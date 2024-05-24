@@ -16,7 +16,7 @@ const CTAbutton: React.FC = () => {
           stiffness: 260,
           damping: 20,
         }}
-        className="mt-6 w-64 h-12 rounded text-gray-12 bg-gradient-to-r from-primary-9 to-indigo-600"
+        className="mt-6 w-64 h-12 rounded text-gray-1 bg-gradient-to-r from-primary-9 to-indigo-600"
       >
         Contact us
       </motion.button>

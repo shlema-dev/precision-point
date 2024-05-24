@@ -1,13 +1,8 @@
 @import '@radix-ui/colors/slate.css';
-@import '@radix-ui/colors/slate-dark.css';
 @import '@radix-ui/colors/cyan.css';
-@import '@radix-ui/colors/cyan-dark.css';
 @import '@radix-ui/colors/red.css';
-@import '@radix-ui/colors/red-dark.css';
 @import '@radix-ui/colors/grass.css';
-@import '@radix-ui/colors/grass-dark.css';
 @import '@radix-ui/colors/amber.css';
-@import '@radix-ui/colors/amber-dark.css';
 
 
 @tailwind base;
@@ -20,7 +15,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media () {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;

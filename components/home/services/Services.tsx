@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 
-import contingentPhoto from "@/public/contingent.jpg";
-import retainedPhoto from "@/public/retained.jpg";
-import rpoPhoto from "@/public/rpo.jpg";
+import contingentPhoto from "@/public/contingent.jpeg";
+import retainedPhoto from "@/public/retained.jpeg";
+import rpoPhoto from "@/public/rpo.jpeg";
 import { motion, useInView, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "../../ui/3d-card";
@@ -54,7 +54,7 @@ const Services: React.FC = () => {
             </span>{" "}
             Fit Any Need
           </h2>
-          <p className="-mt-2 prose-md lg:prose-lg text-gray-12">
+          <p className="-mt-2 prose-md lg:prose-lg text-gray-11">
             Every opportunity is unique, and our services reflect this. We offer
             customized solutions designed to meet your specific needs. Find the
             perfect match that works for you.
@@ -76,7 +76,7 @@ const Services: React.FC = () => {
           }}
         >
           <CardContainer>
-            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8 hover:border-primary-8">
+            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8">
               <CardItem translateZ="100" className="w-full mb-4">
                 <Image
                   src={contingentPhoto}
@@ -120,7 +120,7 @@ const Services: React.FC = () => {
           }}
         >
           <CardContainer>
-            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8 hover:border-primary-8">
+            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8">
               <CardItem translateZ="100" className="w-full mb-4">
                 <Image
                   src={retainedPhoto}
@@ -164,7 +164,7 @@ const Services: React.FC = () => {
           }}
         >
           <CardContainer>
-            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8 hover:border-primary-8">
+            <CardBody className="relative flex-1 h-[550px] lg:h-[650px] rounded-xl p-2 border border-gray-8">
               <CardItem translateZ="100" className="w-full mb-4">
                 <Image
                   src={rpoPhoto}

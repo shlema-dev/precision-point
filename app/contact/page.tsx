@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="relative w-full pb-12 h-full flex flex-col items-center justify-start">
-      <div className="absolute top-0 z-[-2] w-full h-full lg:min-h-screen bg-gray-1 bg-[radial-gradient(#222222_1px,#111111_1px)] bg-[size:20px_20px]"></div>
+    <main className="relative w-full  pb-12 flex flex-col items-center justify-start">
+      <div className="absolute top-0 z-[-2] w-full h-full lg:min-h-screen bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <HeaderContact />
       <div className="w-full lg:max-w-4xl px-8 sm:px-12 mb-12">
         <Reveal delay={0.25}>

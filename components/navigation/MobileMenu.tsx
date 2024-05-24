@@ -19,7 +19,9 @@ const MobileMenu: React.FC = () => {
       {({ open }) => (
         <>
           <MenuButton
-            className="flex items-center rounded-full border border-gray-11 p-3"
+            className={`flex items-center rounded-full border ${
+              path === "/" ? "border-gray-1" : "border-gray-12"
+            } p-3`}
             aria-label="nav button"
           >
             {open ? (
@@ -37,7 +39,7 @@ const MobileMenu: React.FC = () => {
                 <Cross1Icon
                   width={20}
                   height={20}
-                  style={{ color: "lightgray" }}
+                  style={{ color: path === "/" ? "white" : "black" }}
                 />
               </motion.div>
             ) : (
@@ -55,7 +57,7 @@ const MobileMenu: React.FC = () => {
                 <HamburgerMenuIcon
                   width={20}
                   height={20}
-                  style={{ color: "lightgray" }}
+                  style={{ color: path === "/" ? "white" : "black" }}
                 />
               </motion.div>
             )}
@@ -70,14 +72,16 @@ const MobileMenu: React.FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 anchor="bottom end"
-                className="z-10 mt-2 py-6 w-56 flex flex-col justify-center origin-top bg-gray-3 rounded-lg"
+                className={`z-10 mt-2 py-6 w-[300px] flex flex-col justify-center origin-top ${
+                  path === "/" ? "bg-gray-1" : "bg-gray-12"
+                } rounded-lg`}
               >
                 <div className="flex flex-col gap-4 text-center items-center">
                   <MenuItem>
                     <Link
                       href={"/"}
                       className={`prose prose-xl ${
-                        path === "/" ? "text-primary-9" : "text-gray-12"
+                        path === "/" ? "text-primary-9" : "text-gray-1"
                       } block data-[active]:bg-gray-5 data-[focus]:bg-gray-9 data-[focus]:rounded px-4`}
                     >
                       Home
@@ -87,7 +91,11 @@ const MobileMenu: React.FC = () => {
                     <Link
                       href={"/about"}
                       className={`prose prose-xl ${
-                        path === "/about" ? "text-primary-9" : "text-gray-12"
+                        path === "/about"
+                          ? "text-primary-9"
+                          : path === "/"
+                          ? "text-gray-12"
+                          : "text-gray-1"
                       } block data-[active]:bg-gray-5 data-[focus]:bg-gray-9 data-[focus]:rounded px-4`}
                     >
                       About
@@ -97,7 +105,11 @@ const MobileMenu: React.FC = () => {
                     <Link
                       href={"/contact"}
                       className={`prose prose-xl ${
-                        path === "/contact" ? "text-primary-9" : "text-gray-12"
+                        path === "/contact"
+                          ? "text-primary-9"
+                          : path === "/"
+                          ? "text-gray-12"
+                          : "text-gray-1"
                       } block data-[active]:bg-gray-5 data-[focus]:bg-gray-9 data-[focus]:rounded px-4`}
                     >
                       Contact

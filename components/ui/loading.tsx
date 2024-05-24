@@ -7,7 +7,7 @@ const Loading: React.FC = () => {
     display: "block",
     width: "0.75rem",
     height: "0.75rem",
-    backgroundColor: "white",
+    backgroundColor: "#00A2C7",
     borderRadius: "50%",
   };
 
