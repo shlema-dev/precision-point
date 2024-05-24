@@ -82,6 +82,7 @@ const Services: React.FC = () => {
                   src={contingentPhoto}
                   className="h-72 md:h-80 xl:h-96 w-full object-cover rounded-lg"
                   alt="thumbnail"
+                  loading="lazy"
                 />
               </CardItem>
               <CardItem
@@ -125,6 +126,7 @@ const Services: React.FC = () => {
                   src={retainedPhoto}
                   className="h-72 md:h-80 xl:h-96 w-full object-cover rounded-lg"
                   alt="thumbnail"
+                  loading="lazy"
                 />
               </CardItem>
               <CardItem
@@ -168,6 +170,7 @@ const Services: React.FC = () => {
                   src={rpoPhoto}
                   className="h-72 md:h-80 xl:h-96 w-full object-cover rounded-lg"
                   alt="thumbnail"
+                  loading="lazy"
                 />
               </CardItem>
               <CardItem
