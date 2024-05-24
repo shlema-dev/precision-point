@@ -13,6 +13,7 @@ const ScrollToTopButton: React.FC = () => {
   return (
     <button
       className="lg:hidden mt-12 p-2 rounded-full border-2 border-gray-11"
+      aria-label="Scroll-to-top"
       onClick={scrollToTop}
     >
       <ChevronUpIcon />
