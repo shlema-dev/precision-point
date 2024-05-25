@@ -8,7 +8,7 @@ import { Reveal } from "@/components/ui/Reveal";
 const Offerings: React.FC = () => {
   return (
     <Reveal delay={0.25}>
-      <section className="w-[85vw] pt-12 pb-24 px-6 border-t border-primary-9 flex justify-center">
+      <section className="w-[85vw] max-w-7xl my-12 pt-12 pb-24 px-6 border-y border-primary-9 flex justify-center">
         <div className="flex flex-col lg:flex-row lg:gap-24 justify-center items-center">
           <Reveal delay={0.35}>
             <div className="flex flex-col justify-center items-center text-center h-72 w-auto prose">

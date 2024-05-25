@@ -1,4 +1,5 @@
 import Header from "@/components/home/Header";
+import Offerings from "@/components/home/offerings/Offerings";
 import Services from "@/components/home/services/Services";
 import Testimonials from "@/components/home/testimonials/testimonials";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="absolute top-0 z-[-10] w-full h-full lg:min-h-screen bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <Header />
       <Services />
+      <Offerings />
       <Testimonials />
     </main>
   );

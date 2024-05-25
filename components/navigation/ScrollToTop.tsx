@@ -16,7 +16,7 @@ const ScrollToTopButton: React.FC = () => {
       aria-label="Scroll-to-top"
       onClick={scrollToTop}
     >
-      <ChevronUpIcon />
+      <ChevronUpIcon color="black" />
     </button>
   );
 };
