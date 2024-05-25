@@ -25,6 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="theme-color" content="#191919" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#191919" />
+      </head>
       <body className={`${inter.className} bg-gray-1`}>
         <Providers>
           <NavBar />
