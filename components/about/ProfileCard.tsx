@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from "next/image";
-import profilePic from "@/public/profile-pic.jpeg";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 interface ProfileCardProps {
   flipped?: boolean;
   img: StaticImageData;
   name: string;
   title: string;
+  linkedinURL: string;
   description: string;
 }
 
@@ -14,6 +15,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   img,
   name,
   title,
+  linkedinURL,
   description,
 }) => {
   return (
@@ -28,19 +30,24 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             src={img}
             alt="profile picture"
             quality={100}
-            layout="fill"
+            fill
             objectFit="cover"
             className="rounded-full"
           />
         </div>
 
-        <div>
+        <div className="flex flex-col justify-center">
           <p className="pt-4 prose prose-xl font-medium text-center text-primary-11">
             {name}
           </p>
           <p className="-mt-1 lg:mt-0 prose prose-sm  text-center text-primary-12">
             {title}
           </p>
+          <div className="self-center pt-2">
+            <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+              <LinkedInLogoIcon color="#11809C" height={42} width={42} />
+            </a>
+          </div>
         </div>
       </div>
 

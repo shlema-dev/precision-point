@@ -4,7 +4,8 @@ import { Reveal } from "@/components/ui/Reveal";
 export default function Header() {
   return (
     <section className="w-full relative flex items-center justify-center min-h-[100vh] overflow-hidden">
-      <div className="absolute z-1 w-auto min-w-full min-h-full max-w-none">
+      <div className="absolute z-2 w-auto min-w-full min-h-full max-w-none">
+        <div className="absolute z-[4] w-full h-full bg-gray-12 opacity-50"></div>
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
