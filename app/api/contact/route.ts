@@ -9,13 +9,14 @@ export async function POST(request: NextRequest) {
   const lastName = data.get("lastname") as string;
   const email = data.get("email") as string;
   const message = data.get("message") as string;
+  const phone = data.get("phone") as string;
 
-  if (!firstName || !lastName || !email || !message) {
+  if (!firstName || !lastName || !email || !message || !phone) {
     response = { message: "Please fill out all required Fields." };
   } else {
     try {
       console.log("Calling sendMail action...");
-      const res = await sendMail(firstName, lastName, email, message);
+      const res = await sendMail(firstName, lastName, email, message, phone);
       response = { message: "Success" };
       console.log("Successfully sent mail, returning success from api route.");
       return NextResponse.json(response, { status: 200 });

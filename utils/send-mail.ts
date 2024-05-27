@@ -4,13 +4,18 @@ export async function sendMail(
   firstName: string,
   lastName: string,
   email: string,
-  message: string
+  message: string,
+  phone: string
 ) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
+    host: "smtp.office365.com",
     port: 587,
     secure: false,
+    requireTLS: true,
+    tls: {
+      rejectUnauthorized: false,
+      ciphers: "SSLv3",
+    },
     auth: {
       user: process.env.SENDER,
       pass: process.env.APP_PASSWORD,
@@ -19,15 +24,16 @@ export async function sendMail(
 
   const mailOptions = {
     from: {
-      name: "Precision Point Website",
+      name: "Website Contact Form",
       address: process.env.SENDER,
     }, // sender address
-    to: "shlema.dev@gmail.com", // list of receivers
+    to: process.env.SENDER, // list of receivers
     subject: `Contact from ${firstName} ${lastName}`,
     text: message,
-    html: `<h1>${firstName} ${lastName}</h1>
-    <p>Email: ${email}</p>
-    <p>${message}</p>`,
+    html: `<p><b>Name of sender:</b> ${firstName} ${lastName}</p>
+    <p><b>Email:</b> ${email}</p>
+    <p><b>Message:</b> ${message}</p>
+    <p><b>Phone number:</b> ${phone}</p>`,
   };
 
   try {
@@ -35,6 +41,7 @@ export async function sendMail(
     await transporter.sendMail(mailOptions);
   } catch (error: any) {
     console.log("Failed to send mail with nodemailer!");
-    throw new Error(message);
+    console.log(error.message);
+    throw new Error(error.message);
   }
 }

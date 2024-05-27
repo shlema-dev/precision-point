@@ -68,7 +68,7 @@ export function ContactForm() {
           </Label>
           <Input id="email" type="email" name="email" autoComplete="off" />
         </LabelInputContainer>
-        <LabelInputContainer className="mb-12">
+        <LabelInputContainer className="mb-4">
           <Label
             htmlFor="message"
             className={`${
@@ -78,6 +78,17 @@ export function ContactForm() {
             Message
           </Label>
           <Textarea id="message" name="message" rows={5} cols={70} />
+        </LabelInputContainer>
+        <LabelInputContainer className="mb-12">
+          <Label
+            htmlFor="phone"
+            className={`${
+              state.errors.includes("phone") ? "text-error-11" : ""
+            }`}
+          >
+            Phone Number
+          </Label>
+          <Input id="phone" type="tel" name="phone" autoComplete="no_way" />
         </LabelInputContainer>
 
         {state.emailSent ? (

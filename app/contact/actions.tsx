@@ -13,6 +13,7 @@ export async function sendEmailAction(
   const lastName = formData.get("lastname") as string;
   const emailAddress = formData.get("email") as string;
   const message = formData.get("message") as string;
+  const phone = formData.get("phone") as string;
   let errors: string[] = [];
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -38,6 +39,10 @@ export async function sendEmailAction(
 
   if (!message || message.trim().length === 0) {
     errors.push("message");
+  }
+
+  if (!phone || phone.trim().length === 0) {
+    errors.push("phone");
   }
 
   if (errors.length > 0) {

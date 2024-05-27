@@ -28,11 +28,3 @@
     text-wrap: balance;
   }
 }
-
-.blob1 {
-  border-radius: 66% 34% 74% 26% / 78% 65% 35% 22%;
-}
-
-.blob2 {
-  border-radius: 38% 62% 69% 31% / 78% 29% 71% 22%;
-}

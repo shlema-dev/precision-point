@@ -43,7 +43,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           file:text-sm file:font-medium
           focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-primary-8
            disabled:cursor-not-allowed disabled:opacity-50
-           group-hover/input:shadow-none transition duration-400
+           group-hover/input:shadow-none transition duration-400 autofill:shadow-[inset_0_0_0px_1000px_rgb(242,250,251)]
            `,
             className
           )}
