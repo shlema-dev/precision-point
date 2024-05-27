@@ -37,7 +37,7 @@ export function ContactForm() {
               id="firstname"
               type="text"
               name="firstname"
-              autoComplete="off"
+              autoComplete="no_way"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -53,7 +53,7 @@ export function ContactForm() {
               id="lastname"
               type="text"
               name="lastname"
-              autoComplete="off"
+              autoComplete="no_way"
             />
           </LabelInputContainer>
         </div>
@@ -66,7 +66,7 @@ export function ContactForm() {
           >
             Email Address
           </Label>
-          <Input id="email" type="email" name="email" autoComplete="off" />
+          <Input id="email" type="email" name="email" autoComplete="no_way" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label
