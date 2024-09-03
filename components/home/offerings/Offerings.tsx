@@ -23,7 +23,7 @@ const Offerings: React.FC = () => {
               <p className="prose-sm lg:-mt-2 lg:text-md text-gray-12">
                 We don&apos;t believe in charging high fees and making one-off
                 placements. We aim to form genuine partnerships that extend
-                beyong a single placement.
+                beyond a single placement.
               </p>
             </div>
           </Reveal>
