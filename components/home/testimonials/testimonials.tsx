@@ -3,6 +3,7 @@ import React from "react";
 import biomarinLogo from "@/public/biomarin-logo.png";
 import flatironLogo from "@/public/flatiron-logo.png";
 import fourDMTLogo from "@/public/4dmt-logo.png";
+import stealthLogo from "@/public/Stealth-logo.png";
 import { Reveal } from "@/components/ui/Reveal";
 
 const Testimonials: React.FC = () => {
@@ -28,6 +29,36 @@ const Testimonials: React.FC = () => {
         {/* First Tetstimonial */}
         <Reveal delay={0.25}>
           <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl  bg-primary-2 border-2 border-primary-8">
+            <div className="w-[25%]">
+              <Image src={stealthLogo} alt="Company logo" quality={100} />
+            </div>
+            <p className="prose-sm lg:prose-lg text-primary-12 pt-6">
+              “Our partnership with Precision Point has been amazing. Matthew
+              and Austin have been such a huge help, truly feeling like an
+              extension of our recruiting efforts. They&apos;ve been great
+              partners throughout the entire recruitment process - sourcing
+              incredible candidates, coordinating interviews, and helping with
+              offer negotiations. They have made the whole process so much
+              easier for me as a one-person HR team. <br />
+              <br />
+              Since partnering with them, their expertise in roles like Head of
+              Clinical Development, Regulatory Affairs, and various Scientific
+              roles has been critical to us building a strong team. I especially
+              appreciate how responsive, open, and transparent they are
+              throughout the process, always ensuring we&apos;re aligned and
+              communicating clearly at every step. <br />
+              <br />I highly recommend Precision Point to any organization
+              seeking thoughtful, strategic, and collaborative hiring support.”
+            </p>
+            <p className="prose-sm lg:prose-lg text-primary-11 font-medium pt-4 lg:pt-8">
+              Senior Manager of Human Resources at Small Autoimmune Focused
+              Biotech
+            </p>
+          </div>
+        </Reveal>
+        {/* Second Tetstimonial */}
+        <Reveal delay={0.25}>
+          <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl  bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%]">
               <Image src={biomarinLogo} alt="Company logo" quality={100} />
             </div>
@@ -50,7 +81,7 @@ const Testimonials: React.FC = () => {
           </div>
         </Reveal>
 
-        {/* Second Tetstimonial */}
+        {/* Third Tetstimonial */}
         <Reveal delay={0.25}>
           <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%]">
@@ -72,7 +103,7 @@ const Testimonials: React.FC = () => {
           </div>
         </Reveal>
 
-        {/* Third Tetstimonial */}
+        {/* Fourth Tetstimonial */}
         <Reveal delay={0.25}>
           <div className="py-6 lg:py-12 px-4 lg:px-12 flex-1 h-auto rounded-xl bg-primary-2 border-2 border-primary-8">
             <div className="w-[50%] -ml-2 lg:-ml-6">
